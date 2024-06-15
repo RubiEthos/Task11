@@ -13,12 +13,16 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "Payment Invoices", to: "/login", current: true },
-  { name: "Distribution objects", to: "#", current: false },
-  { name: "Starting distribution", to: "#", current: false },
-  { name: "Distribution management", to: "#", current: false },
-  { name: "Distributed invoices for payment", to: "#", current: false },
-  { name: "Cost Estimating and Control", to: "#", current: false },
+  { name: "Payment Invoices", to: "/PaymentI", current: true },
+  { name: "Distribution objects", to: "/DistributionO", current: false },
+  { name: "Starting distribution", to: "/StartD", current: false },
+  { name: "Distribution management", to: "/DistributionM", current: false },
+  {
+    name: "Distributed invoices for payment",
+    to: "/DistributionI",
+    current: false,
+  },
+  { name: "Cost Estimating and Control", to: "/CostE", current: false },
 ];
 
 function classNames(...classes) {
